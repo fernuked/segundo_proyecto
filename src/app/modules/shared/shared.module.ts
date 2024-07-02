@@ -10,7 +10,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
-
+import { MatMenuModule } from '@angular/material/menu'
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 
 @NgModule({
@@ -21,11 +22,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   ],
   imports: [
     CommonModule,
-    NavbarComponent,
-    FooterComponent,
     MatButtonModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatMenuModule
   ],
 
   exports: [
@@ -33,7 +33,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     FooterComponent,
     MatButtonModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatMenuModule
   ]
 })
 
